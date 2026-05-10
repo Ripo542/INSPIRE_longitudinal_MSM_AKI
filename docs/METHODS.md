@@ -34,15 +34,11 @@ Weights are accumulated across intervals to the procedure level. Weight truncati
 
 ## Outcome Modeling
 
-A weighted logistic regression model is fit using the accumulated IPW. Marginal predicted risks and absolute risk differences are computed by comparing treatment strategies of interest.
+Outcome Modeling
 
-## Key Assumptions
+Weighted logistic regression models were fitted using stabilized inverse probability weights derived from the longitudinal treatment allocation models. Marginal predicted risks and absolute risk differences were estimated from the weighted models across cumulative intraoperative exposure levels.
 
-Consistency (SUTVA): The treatment received is as observed.
-
-No unmeasured confounding: All variables affecting treatment assignment and outcome have been measured.
-
-Positivity: Positive probability of treatment across confounder strata.
+Model interpretation depends on standard assumptions underlying longitudinal marginal structural models, including exchangeability, positivity, and consistency. As with all observational perioperative analyses, these assumptions cannot be fully verified within the INSPIRE dataset.
 
 ## References
 
