@@ -9,7 +9,6 @@ Contents:
 - Treatment allocation models for fluid and vasopressor administration
 - Inverse probability weight construction and diagnostics
 - Weighted outcome regression and marginal risk estimation
-- Results tables and diagnostic figures
 
 ## Data Access
 
