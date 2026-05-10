@@ -1,7 +1,4 @@
-INSPIRE_HEMO_MSM_AKI reproducibility freeze V2
-Created: 2026-05-07 09:32:27 
-Project root: /Users/javi/Documents/INSPIRE_hemodynamics/INSPIRE_HEMO_MSM_AKI 
-Freeze directory: /Users/javi/Documents/INSPIRE_hemodynamics/INSPIRE_HEMO_MSM_AKI/INSPIRE_MSM_FINAL_FREEZE_V2_20260507_093226 
+INSPIRE longitudinal MSM AKI reproducibility environment
 
 R version 4.5.2 (2025-10-31)
 Platform: aarch64-apple-darwin20
