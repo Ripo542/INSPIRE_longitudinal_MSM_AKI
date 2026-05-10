@@ -12,7 +12,7 @@ Cohort: Defined by inclusion/exclusion criteria documented in scripts/cohort/10N
 
 Outcome: Postoperative acute kidney injury defined per KDIGO criteria using serum creatinine. Construction documented in scripts/cohort/11N_build_aki_outcome.R.
 
-Exposure: Fluid administration (crystalloid, colloid) and vasopressor administration (noradrenaline, phenylephrine, others) modeled as time-varying exposures at 5-minute intervals during surgery.
+Exposure: Fluid administration (crystalloid, colloid) and vasopressor administration (norepinephrine, phenylephrine, others) modeled as time-varying exposures at 5-minute intervals during surgery.
 
 Confounders: Time-fixed baseline characteristics (age, sex, BMI, comorbidities, baseline labs, ASA status) and time-varying intraoperative parameters (vital signs, urine output, cumulative prior treatment).
 
@@ -30,11 +30,9 @@ Longitudinal restructuring is implemented in scripts/longitudinal/20N_build_long
 
 Treatment allocation models are fit using generalized estimating equations to estimate the probability of observed treatment conditional on lagged confounders (scripts/msm/31N_fit_treatment_models_weights.R). Inverse probability weights are constructed as the ratio of marginal to conditional treatment probabilities.
 
-Weights are accumulated across intervals to the procedure level. Weight truncation is applied and diagnostic assessment performed (scripts/msm/35R_weight_diagnostics.R).
+Interval-specific stabilized weights were accumulated across the intraoperative period to generate procedure-level weights. Weight truncation is applied and diagnostic assessment performed (scripts/msm/35R_weight_diagnostics.R).
 
 ## Outcome Modeling
-
-Outcome Modeling
 
 Weighted logistic regression models were fitted using stabilized inverse probability weights derived from the longitudinal treatment allocation models. Marginal predicted risks and absolute risk differences were estimated from the weighted models across cumulative intraoperative exposure levels.
 
