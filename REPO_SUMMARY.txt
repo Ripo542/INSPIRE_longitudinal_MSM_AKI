@@ -1,40 +1,45 @@
 ================================================================================
-Longitudinal intraoperative hemodynamics and acute kidney injury
+Longitudinal intraoperative hypotension and postoperative acute kidney injury
 ================================================================================
 
-Repository: https://github.com/Ripo542/INSPIRE_longitudinal_MSM_AKI
+Repository:
+https://github.com/Ripo542/INSPIRE_longitudinal_MSM_AKI
 
-Contents: R analytical code for marginal structural modeling of intraoperative 
-hemodynamic exposures and postoperative acute kidney injury. Includes analytical 
-scripts, documentation and R session information.
+Contents:
+R code for longitudinal restructuring, inverse probability weighting, and weighted outcome modeling in the INSPIRE perioperative dataset. Includes analytical scripts, documentation, and R session information.
 
 ================================================================================
 STRUCTURE
 ================================================================================
 
-scripts/          49 R analysis scripts organized by phase (00–53)
+scripts/          R analysis scripts organized by analytical phase (00–53)
 docs/             Documentation
 logs/             R session information
 
 ================================================================================
 EXECUTION
+================================================================================
 
-Scripts are organized sequentially: 00 → 01 → 10–14 → 20–24 → 30–35 → 40–53
+Scripts are organized into sequential analytical phases:
+00 → 01 → 10–14 → 20–24 → 30–35 → 40–53
 
 ================================================================================
 REQUIREMENTS
+================================================================================
 
-R 4.0+, packages documented in logs/sessionInfo.txt
-INSPIRE dataset (for reproducibility) Available on PhysioNet 
+R 4.0 or later.
+Required packages are documented in logs/sessionInfo.txt.
+
+The INSPIRE dataset is required for reproducibility and is available separately through PhysioNet under the corresponding data use agreement.
 
 ================================================================================
 CONFIGURATION
+================================================================================
 
-Edit scripts/setup/00_setup_project.R for local paths.
+Edit scripts/setup/00_setup_project.R to specify local paths.
 
 ================================================================================
 REPOSITORY
-
-https://github.com/Ripo542/INSPIRE_MSM_REPO_FINAL-2
-
 ================================================================================
+
+https://github.com/Ripo542/INSPIRE_longitudinal_MSM_AKI
